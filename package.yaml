@@ -1,0 +1,23 @@
+name: algos
+version: 0.1.0.0
+synopsis: jml doing algorithm practice
+description: See README.md for details
+maintainer: Jonathan M. Lange <jml@mumak.net>
+license: GPL3
+github: jml/algos
+category: Development
+
+ghc-options: -Wall -Werror
+default-extensions:
+  - NoImplicitPrelude
+  - OverloadedStrings
+
+dependencies:
+  - base >= 4.9 && < 5
+  - protolude >= 0.1.5
+
+executables:
+  algos:
+    main: Main.hs
+    source-dirs: cmd
+    ghc-options: -threaded -rtsopts -with-rtsopts=-N
